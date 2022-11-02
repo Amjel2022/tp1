@@ -1,0 +1,68 @@
+:root {
+    /* Declarar variables con modelos camelCase */
+}
+
+body {
+    background-image: url(./images/Fondos/fondoquimica1.png);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ----------------- CABECERA ----------------- */
+
+.cabecera, .contenido {
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+} 
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkslateblue;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cabecera h1 {
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+.cabecera img {
+    max-width: 150px;
+}
+
+/*-------------------- NAVEGACION --------------- */
+.navegacion {
+    background-color: rgb(228, 162, 162);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 8px 8px;
+}
+
+.lista {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista li {
+    padding: 5px;
+    border-right: 1px solid black;
+} 
+
+.lista a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+}
+
+.navegacion form {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 5px;
+}
