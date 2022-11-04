@@ -1,5 +1,9 @@
+/* COLORES */
 :root {
-    /* Declarar variables con modelos camelCase */
+    --blanco: #f4f4f2;
+    --azul: #0034c4;
+    --celeste: #007fff;
+    --gris: #848775;
 }
 
 body {
@@ -18,7 +22,7 @@ body {
 .cabecera {
     display: flex;
     justify-content: space-between;
-    background-color: darkslateblue;
+    background-color: var(--gris);
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
@@ -27,8 +31,8 @@ body {
 }
 
 .cabecera h1 {
-    font-size: 60px;
-    margin-left: 50px;
+    font-size: 40px;
+    margin-left: 40px;
 }
 
 .cabecera img {
@@ -37,27 +41,42 @@ body {
 
 /*-------------------- NAVEGACION --------------- */
 .navegacion {
-    background-color: rgb(228, 162, 162);
+    background-color: var(--azul);
     display: flex;
     justify-content: space-between;
     border-radius: 0 0 8px 8px;
+    list-style-type: none;
+    height: 100%;
 }
 
-.lista {
-    list-style-type: none;
+.menu {
     display: flex;
     justify-content: space-between;
 }
 
-.lista li {
-    padding: 5px;
-    border-right: 1px solid black;
-} 
+.menu li {
+    list-style-type: none;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+}
 
-.lista a {
+.menu a {
     text-decoration: none;
-    font-weight: bold;
-    color: blue;
+    width: 110%;
+    height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--blanco);
+    transition: all 300ms ease;
+}
+
+.menu a:hover {
+    transform: scale(1.1);
+    background: var(--celeste);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
 .navegacion form {
@@ -65,4 +84,33 @@ body {
     align-items: center;
     margin-right: 20px;
     gap: 5px;
+}
+
+.buscador input {
+    width: 200px;
+    padding: 8px;
+}
+
+.menu > li > ul {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    background: var(--azul);
+    position: absolute;
+    top: 50px;
+    padding: 14px 0px;
+    z-index: 10;
+    transition: all 300ms ease;
+    visibility: hidden;
+}
+
+.menu > li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+.imagen1 {
+    text-align: center;
+    margin-top: 20px;
 }

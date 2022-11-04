@@ -10,33 +10,57 @@
 <body>
     <!-- sección cabecera -->
     <div class="cabecera">
-        <h1>Tabla Periódica</h1>
+        <h1>Tabla Periódica <i>(para principiantes)</i></h1>
         <a href="index.html">
             <img src="./images/tablacabecera.png" alt="Ir al inicio">
         </a>       
     </div>
     <!-- fin sección cabecera -->
 
-    <!-- Inicio Menu de Navegacion -->
+    
     <div class="contenido">
+        <!-- Inicio Menu de Navegacion -->
         <div class="navegacion">
-            
-            <ul class="lista">
-                <li> <a href="#">Generalidades</a> </li>
-                <li> <a href="#">Historia</a> </li>
-                <li> <a href="#">Metales</a> </li>
-                <li> <a href="#">No Metales</a> </li>
-                <li> <a href="#">Metaloides</a> </li>
-                <li> <a href="#">Datos Curiosos</a> </li>
-                <li> <a href="#">Tabla para descargar</a> </li>
+            <ul class="menu">
+                <li> <a href="#introducción">Introducción</a> </li>
+                <li> <a href="./organizacion.html">Organización</a> </li>
+                <li> <a href="./historia.html">Historia</a> </li>
+                <!-- inicio menu desplegable -->
+                <li> <a href="#">Clasificación</a> 
+                    <ul> 
+                        <li> <a href="./metales.html">Metales</a> </li>
+                        <li> <a href="./noMetales.html">No Metales</a> </li>
+                        <li> <a href="./metaloides.html">Metaloides</a> </li>                              
+                    </ul>
+                </li>    
+                <!-- fin menu desplegable -->
+                <li> <a href="./datosCuriosos.html">Datos Curiosos</a> </li>
+                <li> <a href="./tablaParaDescargar.html">Tabla para descargar</a> </li>
             </ul>
-
+            <!-- formulario -->
             <form action="buscar.js">
-                <input type="text" placeholder="Buscar en la página">
+                <div class="buscador">
+                    <input type="text" placeholder="¿Qué deseas buscar?">
+                </div>
                 <input type="submit" value="Buscar">
             </form>
-
+            <!-- fin formulario -->
+        <!-- fin de menu navegacion -->
         </div>
+        
+        <!-- imagen de la tabla -->
+        <div class="imagen1">
+            <img src="./images/tablaper1.png" alt="imagen de la tabla">
+        </div>
+        <!-- fin imagen de la tabla -->
+        
+        <h2 id="introducción">Introducción</h2>
+        <p>La tabla periódica de los elementos es una disposición de los elementos químicos en forma de tabla, ordenados por su número atómico (número de protones), por su configuración de electrones y sus propiedades químicas. Este ordenamiento muestra tendencias periódicas como elementos con comportamiento similar en la misma columna.</p>
+        
+        <h3>¿Tablas Periódicas con estructuras diferentes?</h3>
+        <p>La tabla periódica moderna a veces se expande a su forma larga o de 32 columnas restableciendo los elementos del bloque f a su posición natural entre los bloques s y d. A diferencia de la forma de 18 columnas, esta disposición da como resultado «el aumento sin interrupciones a la secuencia de los números atómicos». También se hace más fácil ver la relación del bloque f con los otros bloques de la tabla periódica. Jensen aboga por una forma de tabla con 32 columnas con base en que los lantánidos y actínidos son relegados en la mente de los estudiantes como elementos opacos y poco importantes que pueden ser puestos en cuarentena e ignorados. A pesar de estas ventajas, los editores generalmente evitan la formulación de 32 columnas porque su relación rectangular no se adapta adecuadamente a la proporción de una página de libro.</p>
+        <p>Los científicos discuten la eficiencia de cada modelo de tabla periódica. Muchos cuestionan incluso que la distribución bidimensional sea la mejor. Argumentan que se basa en una convención y en conveniencia, principalmente por la necesidad de ajustarlas a la página de un libro y otras presentaciones en el plano. El propio Mendeléyev no estaba conforme y consideró la distribución en espiral, sin suerte. Algunos argumentos en favor de nuevos modelos consisten en, por ejemplo, la ubicación del grupo de los lantánidos y de los actínidos fuera del cuerpo de la tabla, e incluso que el helio debería estar ubicado en el grupo 2 de los alcaniotérreos, pues comparte con ellos dos electrones en su capa externa. Por ello con los años se han desarrollado otras tablas periódicas ordenadas en forma distinta, como por ejemplo en triángulo, pirámide, tablas en escalones, torre y en espiral. A este último tipo corresponde la galaxia química, la espiral de Theodor Benfey y la forma en espiral-fractal de Melinda E Green. Se estima que se han publicado más de 700 versiones de la tabla periódica.</p>
+
     </div>
 
 </body>
