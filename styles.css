@@ -6,19 +6,16 @@
     --gris: #848775;
 }
 
-* {
-    max-width: 1300px;
-    margin-right: auto;
-    margin-left: auto; 
-    background-image: ();
-}
-
 body {
     background-image: url(./images/Fondos/fondoquimica1.png);
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 body p {
-    font-size: 20px; 
+    font-size: 20px;
+    text-align: justify; 
 }
 
 h2 {
@@ -49,20 +46,19 @@ h3 {
     display: flex;
     justify-content: space-between;
     background-color: var(--gris);
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
     align-items: center;
     border-radius: 10px 10px 0px 0px;
+    background-image: -moz-radial-gradient(var(--blanco) 20%, var(--gris));
 }
 
 .cabecera h1 {
-    font-size: 40px;
-    margin-left: 40px;
+    font-size: 50px;
+    margin-left: 50px;
 }
 
 .cabecera img {
     max-width: 150px;
+    margin-right: 90px;
 }
 
 /*-------------------- NAVEGACION --------------- */
@@ -73,11 +69,13 @@ h3 {
     border-radius: 0 0 8px 8px;
     list-style-type: none;
     height: 100%;
+    align-items: center;
 }
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .menu li {
@@ -85,6 +83,7 @@ h3 {
     padding: 15px;
     position: relative;
     text-align: center;
+    align-items: center;
 }
 
 .menu a {
@@ -96,7 +95,10 @@ h3 {
     text-align: center;
     font-weight: bolder;
     color: var(--blanco);
-    transition: all 300ms ease;  
+    transition: all 300ms ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19px;
+    font-variant: small-caps;
 }
 
 .menu a:hover {
@@ -109,10 +111,10 @@ h3 {
     display: flex;
     align-items: center;
     margin-right: 20px;
-    gap: 5px;
+    gap: 15px;
 }
 
-.buscador input {
+.buscador {
     width: 200px;
     padding: 8px;
 }
@@ -141,13 +143,75 @@ h3 {
     margin-top: 20px;
 }
 
+/*--------------------- inicio NEWS ---------------------*/
+
+.suscripcion img {
+    max-width: 100px;
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    padding-right: 20px;
+    padding-left: 20px; 
+    margin: auto;
+    border-radius: 8px;
+    border: 2px solid var(--gris);
+    background-image: linear-gradient(var(--blanco) 60%, var(--gris));
+}
+
+.suscripcion {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.info-news {
+    width: 450px;
+}
+
+.info-news p {
+    text-align: end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.info-news h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 300px;
+}
+
+.boton-suscripcion {
+    border: none;
+    background: none;
+    padding: 8px;    
+}
+
+.boton-suscripcion:hover {
+    color: var(--azul);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.campo {
+    width: 200px;
+    height: 30px;
+    font: 1em sans-serif;
+}
+
+
+
 /*----------------- página de Organización ----------------*/
 
 .listaOrganizacion {
     font-size: 30px;
     font-style: italic;
+    text-align: justify;
     
 }
 
-/*----------------- página de Organización ----------------*/
+/*------------------- página de Historia ------------------*/
 
