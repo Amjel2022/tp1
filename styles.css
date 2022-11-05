@@ -6,9 +6,35 @@
     --gris: #848775;
 }
 
+* {
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto; 
+    background-image: ();
+}
+
 body {
     background-image: url(./images/Fondos/fondoquimica1.png);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body p {
+    font-size: 20px; 
+}
+
+h2 {
+    font-size: 35px;
+    color: red;
+}
+
+h3 {
+    font-size: 25px;
+    color: var(--azul);
+    
+}
+
+.tituloH1 {
+    font-size: 45px;
+    color: red;
 }
 
 /* ----------------- CABECERA ----------------- */
@@ -70,7 +96,7 @@ body {
     text-align: center;
     font-weight: bolder;
     color: var(--blanco);
-    transition: all 300ms ease;
+    transition: all 300ms ease;  
 }
 
 .menu a:hover {
@@ -114,3 +140,14 @@ body {
     text-align: center;
     margin-top: 20px;
 }
+
+/*----------------- página de Organización ----------------*/
+
+.listaOrganizacion {
+    font-size: 30px;
+    font-style: italic;
+    
+}
+
+/*----------------- página de Organización ----------------*/
+
