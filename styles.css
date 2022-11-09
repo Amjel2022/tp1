@@ -29,8 +29,7 @@ h3 {
     font-size: 35px;
     color: var(--azul);
     text-shadow: 
-            2px 5px var(--celeste),
-            4px 8px var(--gris);
+            2px 5px var(--celeste); 
 }
 
 .tituloH1 {
@@ -289,6 +288,9 @@ h3 {
 /* ------------------------------------------------------- */
 /*---------- página de Metales (clasificacion) ------------*/
 /* ------------------------------------------------------- */
+.body p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 .contenidoMetales {
     display: grid;
@@ -296,6 +298,7 @@ h3 {
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 40px;
     grid-row-gap: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     
 .metal_1 { 
@@ -316,27 +319,78 @@ h3 {
 }
 
 .metal_2 { 
-    grid-area: 1 / 2 / 2 / 3; 
+    grid-area: 1 / 2 / 2 / 3;
+    border: #848775 solid 4px;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--blanco);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease; 
 }
-    
+
+.metal_2:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
 .metal_3 { 
-    grid-area: 2 / 1 / 3 / 2; 
+    grid-area: 2 / 1 / 3 / 2;
+    border: #848775 solid 4px;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--blanco);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease; 
 }
-    
+
+.metal_3:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
 .metal_4 { 
-    grid-area: 2 / 2 / 3 / 3; 
+    grid-area: 2 / 2 / 3 / 3;
+    border: #848775 solid 4px;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--blanco);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease; 
 }
-    
+
+.metal_4:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
 .metal_5 { 
-    grid-area: 3 / 1 / 4 / 3; 
+    grid-area: 3 / 1 / 4 / 3;
+    border: #848775 solid 4px;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--blanco);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease; 
 } 
+
+.metal_5:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
 
 .imgMetal {
     width: 200px;
     height: 200px;
     float: left;
     padding: 0px 10px 0px 0px;
-      
 }
 
 .imgMetal_2 {
@@ -344,5 +398,62 @@ h3 {
     height: 200px;
     float: right;
     padding: 0px 0px 0px 10px;
+}
+
+/* ------------------------------------------------------- */
+/*--------- página de No Metales (clasificacion) -----------*/
+/* ------------------------------------------------------- */
+
+/* en proceso */
+
+/* ------------------------------------------------------- */
+/*-------- página de Metaloides (clasificacion) -----------*/
+/* ------------------------------------------------------- */
+
+/* en proceso */
+
+/* ------------------------------------------------------- */
+/*------------ página de Tabla para Descargar -------------*/
+/* ------------------------------------------------------- */
+
+.tabladescargar {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    cursor: pointer;
+}
+
+.tabladescargar img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.tabladescargar:hover .tituloh2_td {
+    width: 100%;
+}
+
+.tituloh2_td  {
+    width: 0%;
+    height: 100%;
+    background: rgba(103,58,183,0.71);
+    position: absolute;
+    top: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 400ms ease-in-out;
+}
+
+.tituloh2_td h2 {
+    color: #fff;
+    font-size: 50px;
+    border: 8px solid;
+    border-radius: 8px;
+    padding: .8em 1.9em;
 }
 
