@@ -558,7 +558,15 @@ h3 {
     .firma a{
         flex-direction: column;
         margin-bottom: 15px;
-    }      
+    }
+    /* pagina de Metales */
+    .contenidoMetales{
+        display: grid;
+        grid-template-columns: repeat 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
 }
 
 @media(max-width:)
